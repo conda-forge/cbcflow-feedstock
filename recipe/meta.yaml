@@ -1,5 +1,5 @@
 {% set name = "cbcflow" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cbcflow-{{ version }}.tar.gz
-  sha256: e7db873179742cc77fbfa57b6deb7d0aa723ba6b6e1b2eaaac38b315d2f39824
+  sha256: bd93eefec3dfd0aae6b9864c5fa5d722f2053a11d649a00f40b5e80c5f81cdfd
 
 build:
   entry_points:
@@ -20,6 +20,7 @@ build:
     - cbcflow_monitor_run = cbcflow:run_monitor
     - cbcflow_validate_library = cbcflow:validate_library
     - cbcflow_git_merge = cbcflow:cbcflow_git_merge
+    - cbcflow_migrate_v2_to_v3 = cbcflow:migrate_schema_v2_to_v3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
