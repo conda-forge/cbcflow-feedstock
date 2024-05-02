@@ -48,6 +48,9 @@ requirements:
     - python-crontab
     - python-gitlab
     - gwtc-tools
+    - tqdm
+    - asimov
+    - python-dateutil
 
 test:
   imports:
