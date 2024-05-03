@@ -1,5 +1,5 @@
 {% set name = "cbcflow" %}
-{% set version = "0.4.4" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cbcflow-{{ version }}.tar.gz
-  sha256: 41bc7c958ec87d8e5a6b1cd4000efadf1997df2e349211da60d6c93982f40a33
+  sha256: 18a13c5c63bb2ac31800ce22f279450f70b31f1ee7a025e0f9301101d9a5f68f
 
 build:
   entry_points:
@@ -47,6 +47,10 @@ requirements:
     - gwpy
     - python-crontab
     - python-gitlab
+    - gwtc-tools
+    - tqdm
+    - asimov
+    - python-dateutil
 
 test:
   imports:
