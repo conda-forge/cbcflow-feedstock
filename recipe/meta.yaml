@@ -50,7 +50,7 @@ requirements:
     - tqdm
     - asimov
     - python-dateutil
-    - fastjsonschema
+    - python-fastjsonschema
 
 test:
   imports:
