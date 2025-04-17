@@ -36,7 +36,7 @@ requirements:
     - python >=3.9
     - argcomplete
     - jsondiff
-    - ligo-gracedb>=2.13.2
+    - ligo-gracedb >=2.13.2
     - GitPython
     - lscsoft-glue
     - coverage
