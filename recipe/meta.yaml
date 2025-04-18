@@ -1,13 +1,13 @@
 {% set name = "cbcflow" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cbcflow-{{ version }}.tar.gz
-  sha256: 5fdf69463438d1ff726da1c66387b1125762284186cff51b425aad26d21c8623
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c532300c12a76a03f647272f74b89607f6299e863cf467fac358c4ee67c1ce49
 
 build:
   entry_points:
