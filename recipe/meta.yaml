@@ -1,5 +1,5 @@
 {% set name = "cbcflow" %}
-{% set version = "0.6.2" %}
+{% set version = "0.6.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cbcflow-{{ version }}.tar.gz
-  sha256: 28de3a0d7bc21b949d7c02c45e088c3cbd65cacf96d40ae6ecc44e53c84bad13
+  sha256: c91777421fb3131195e9d4ccdf35ed7ab15f475a0e7483f4d793d8be80773ecd
 
 build:
   entry_points:
